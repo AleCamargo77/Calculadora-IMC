@@ -1,6 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --color-green: rgb(4,116,128);
+    --color-grey: #dbd9d9;
+}
+
+.imc-container {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    margin-top: 100px;
+    /* flex-wrap: wrap; */
+}
+
+.imc-informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-grey);
+    width: 40%;
+    /* flex-wrap: wrap; */
+
+}
+
+.imc-calculator {
+    background: rgb(4,116,128) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+}
+
+.imc-informations h1{
+    font-family: var(--font-roboto);
+    font-size: 3rem;
+    color: var(--color-green);
+    padding: 0 25px;
+}
+
+.imc-informations p {
+    margin-top: 50px;  
+    color: grey;
+    margin-right: 5.5em;
+}
+
+.imc-items input {
+    background: var(--color-grey);
+    border: none;
+    height: 40px;
+    width: 240px; 
+    padding: 3px;
+}
+
+.imc-container button {
+    padding: 10px 40px;
+    cursor: pointer;
+    background: #E25416;
+    border: none;
+    color: white;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-right: 340px; 
+}
+
+.imc-calculator h1 {
+    color: var(--color-grey);
+    font-family: var(--font-roboto);
+    font-size: 1.2rem;
+}
+
+.imc-items {
+    display: flex;
+    gap: 5px;
+}
+
+#result {
+    font-family: var(--font-roboto);
+    color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+    max-width: 90%;
+}

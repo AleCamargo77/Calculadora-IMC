@@ -9,9 +9,8 @@ function calculateImc() {
         const resultImc = (weight / (height * height)).toFixed(2);
         const classification = classifyImc(resultImc);
         document.getElementById('result').innerHTML = 
-        'O resultado IMC é ' + resultImc + ' e a classificação é ' + classification;
+        'O resultado IMC é de ' + resultImc + ' e a classificação é ' + classification;
     }
-
 }
 
 function validateImc(weight, height) {
